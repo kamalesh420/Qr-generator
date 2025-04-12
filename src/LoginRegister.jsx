@@ -39,7 +39,7 @@ export const LoginRegister = ({ setUser }) => {
             },
           })
             .then((response) => {
-              if (response.status != 500) {
+              if (response.status != 200) {
                 throw new Error("Login Failed!");
               }
 
